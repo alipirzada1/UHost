@@ -1,0 +1,117 @@
+main {
+  padding-top: 1rem;
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ff1b68;
+}
+
+.signup-form {
+  padding: 1rem;
+  /* margin: auto; */
+  display: grid;
+  grid-auto-rows: 2rem;
+  row-gap: 0.5rem;
+}
+
+.signup-form label {
+  font-weight: bold;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form select {
+  display: block;
+  width: 100%;
+  align-self: self-end;
+}
+
+.signup-form input[type="checkbox"],
+.signup-form label[for*="terms"] {
+  display: inline-block;
+  width: auto;
+}
+
+.signup-form input:not([type="checkbox"]) {
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 1);
+  padding: 0.2rem 0.5rem;
+  font: inherit;
+}
+
+.signup-form select {
+  box-shadow: 0px 0px 1px 1.5px rgba(0, 0, 0, 1);
+  padding: 0.2rem 0.5rem;
+  font: inherit;
+}
+
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus {
+  outline: none;
+  background: #d8f3df;
+  border-color: #2ddf5c;
+}
+
+.signup-form input[type="checkbox"] {
+  border: 1px solid rgba(0, 0, 0, 1);
+  background: white;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  /* -moz-appearance: none; */
+  /* appearance: none; */
+}
+
+.signup-form input[type="checkbox"]:checked {
+  background: #ff0000;
+  /* border: ; */
+}
+
+.signup-form :invalid {
+  border-color: red !important;
+  background: #faacac;
+}
+
+.button {
+  border-radius: 10;
+  padding: 10px 0 38px 0;
+  margin: 0 30% 0 36%;
+}
+
+.button:hover,
+.button:active {
+  /* box-shadow: 0px 0px 1px 1.5px rgba(0, 0, 0, 1); */
+}
+
+.button div {
+  font-size: larger;
+}
+
+.signup-form button[type="submit"] {
+  display: block;
+}
+
+@media (min-width: 35rem) {
+  .signup-form {
+    margin: auto;
+    width: 35rem;
+    grid-template-columns: 10rem auto;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+  }
+
+  .signup-form-checkbox {
+    grid-column: span 2;
+  }
+
+  .signup-form [id="title"] {
+    /* grid-column: span 2; */
+  }
+
+  .button {
+    grid-column: span 2;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,140 @@
+main {
+  padding-top: 3rem;
+  min-height: calc(100vh - 1.8rem -9.8125rem);
+}
+
+.background {
+  background: url("../images/plans-background.jpg") center center/cover;
+  filter: grayscale(40%);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.package {
+  background: rgba(90, 235, 90, 0.5);
+  border: 4px solid #0e4f1f;
+  border-left: none;
+  border-radius: 15px;
+  width: 80%;
+  margin: 1rem 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.package-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  font-size: 1rem;
+  background: #ff5454;
+  color: #fff;
+  padding: 0.5rem;
+  /* border-radius: 5px; */
+  font-size: 1.2rem;
+
+  transform: rotateZ(45deg) translateX(4.9rem) translateY(-1rem);
+  transform-origin: center;
+  width: 16rem;
+  text-align: center;
+}
+
+.package-badge:hover {
+  border-color: #ff5454;
+}
+
+.package:hover,
+.package:active {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: #ff5454;
+}
+
+.plan-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 2rem;
+  /* text-align: center; */
+  margin-top: 50px;
+}
+
+.plan-heading1 {
+  color: black;
+  /* margin: 10px; */
+  /* padding: 10px; */
+  font-weight: bold;
+}
+
+.plan-heading2 {
+  /* padding: 20px; */
+  color: #979797;
+}
+
+.plan-paragraph {
+  background: white;
+  border: 2px solid #0e4f1f;
+  color: #0e4f1f;
+  font-size: 1.2rem;
+  padding: 1rem;
+  /* margin: 20px; */
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.clearfix {
+  clear: both;
+}
+
+#plus {
+  background: rgba(213, 255, 220, 0.95);
+  margin-top: 2rem;
+}
+
+#free {
+  background: rgba(234, 252, 237, 0.95);
+  float: right;
+  border-right: none;
+  border-left: 4px solid #0e4f1f;
+  text-align: right;
+}
+
+#free:hover,
+#free:active {
+  border-left-color: #ff5454;
+}
+
+#premium {
+  background: rgba(14, 79, 31, 0.95);
+}
+
+#premium .plan-heading1 {
+  color: white;
+}
+
+#premium .plan-heading2 {
+  color: #bbb;
+}
+
+@media (min-width: 40rem) {
+  main {
+    margin: auto;
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .package {
+    border-left: 4px solid #0e4f1f;
+  }
+
+  #free {
+    border-right: 4px solid #0e4f1f;
+  }
+
+  #free:hover,
+  #free:active {
+    border-right-color: #ff5454;
+  }
+}
